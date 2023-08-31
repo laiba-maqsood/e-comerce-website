@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    background-color: rgb(8, 167, 153);
+    justify-content: space-between;
+    padding: 25px 60px;
+    align-items: center;
+
+}
+.left{
+    padding-top: 28px;
+    font-size: 25px;
+    color: white;
+}
+
+.cart{
+    position: relative;
+    background-color: aqua;
+    font-size: 45px;
+    border: 2px solid aqua ;
+    border-radius: 15px;
+    padding: 8px;
+}
+.number{
+    background-color: black;
+    color: white;
+    top: -17px;
+    right: -8px;
+    position: absolute;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding : 5px;
+}
+.shope{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    gap: 35px;
+    margin-top: 50px;
+}
+@media (max-width: 1000px){
+    .shope{
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+@media(max-width: 500px){
+    .shope{
+        grid-template-columns: repeat(1, 250px);
+    }
+}
+
+.item{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+img{
+    border-radius: 20px 20px 0px 0px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 7px;
+}
+.pricing{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+}
+.bi-plus{
+    color: green;
+}
+.bi-dash{
+    color: red;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/**
+* cart items styling at chkout.
+**/
+.center-text{
+    text-align: center;
+    margin: 20px;
+}
+.homebutton{
+    background-color: rgb(8, 167, 153) ;
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 200;
+}
+.bi-x{
+    color: red;
+    font: bold;
+    font-size: larger;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+.cart-title{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.title-price{
+    display: flex;
+    gap: 10px;
+}
+.chk{
+    background-color: green;
+    padding: 5px;
+}
+.remove{
+    background-color: rgb(210, 0, 7);
+    padding: 5px;
+}
+.cartimg{
+    border-radius: 0;
+}
